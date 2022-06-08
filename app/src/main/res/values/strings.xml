@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">learning65apps</string>
+    <string name="contact_list_title">Список контактов</string>
+    <string name="contact_details_title">Детали контакта</string>
+    <string name="contact_name">Вадим</string>
+    <string name="contact_phone">+79511998595</string>
+    <string name="contact_phone2">+79127687664</string>
+    <string name="contact_email">tataruvad@yandex.ru</string>
+    <string name="contact_email2">fensonvadim@gmail.com</string>
+    <string name="contact_image_description">contact img</string>
+    <string name="btn_dotes">…</string>
+    <string name="et_hint">Описание</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".presentation.fragments.ContactDetailsFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgContactSecond"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/imageViewBackground"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etContactName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="@string/contact_name"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_phone_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgContactSecond"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_phone_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:text="@string/contact_phone"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/etContactName"
+        app:layout_constraintStart_toStartOf="@+id/imgContactSecond"
+        app:layout_constraintTop_toBottomOf="@+id/imgContactSecond" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_phone_second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="8dp"
+        android:text="@string/contact_phone2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_phone_first"
+        app:layout_constraintStart_toStartOf="@+id/et_phone_first"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone_first" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_points_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/color_btn"
+        android:text="@string/btn_dotes"
+        app:layout_constraintEnd_toEndOf="@+id/et_phone_second"
+        app:layout_constraintStart_toStartOf="@+id/et_phone_second"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone_second" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_email_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="8dp"
+        android:text="@string/contact_email"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_points_first"
+        app:layout_constraintStart_toStartOf="@+id/btn_points_first"
+        app:layout_constraintTop_toBottomOf="@+id/btn_points_first" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_email_second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="8dp"
+        android:text="@string/contact_email2"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_email_first"
+        app:layout_constraintStart_toStartOf="@+id/et_email_first"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_first" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_points_second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/color_btn"
+        android:text="@string/btn_dotes"
+        app:layout_constraintEnd_toEndOf="@+id/et_email_second"
+        app:layout_constraintStart_toStartOf="@+id/et_email_second"
+        app:layout_constraintTop_toBottomOf="@+id/et_email_second" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="8dp"
+        android:hint="@string/et_hint"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_points_second"
+        app:layout_constraintStart_toStartOf="@+id/btn_points_second"
+        app:layout_constraintTop_toBottomOf="@+id/btn_points_second" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

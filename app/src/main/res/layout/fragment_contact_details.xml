@@ -19,8 +19,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/etContactName"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvContactName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toEndOf="@+id/imgContactSecond"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/et_phone_first"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -48,11 +48,11 @@
         android:paddingEnd="0dp"
         android:text="@string/contact_phone"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/etContactName"
+        app:layout_constraintEnd_toEndOf="@+id/tvContactName"
         app:layout_constraintStart_toStartOf="@+id/imgContactSecond"
         app:layout_constraintTop_toBottomOf="@+id/imgContactSecond" />
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/et_phone_second"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
         app:layout_constraintStart_toStartOf="@+id/et_phone_second"
         app:layout_constraintTop_toBottomOf="@+id/et_phone_second" />
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/et_email_first"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
         app:layout_constraintStart_toStartOf="@+id/btn_points_first"
         app:layout_constraintTop_toBottomOf="@+id/btn_points_first" />
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/et_email_second"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -119,7 +119,7 @@
         app:layout_constraintStart_toStartOf="@+id/et_email_second"
         app:layout_constraintTop_toBottomOf="@+id/et_email_second" />
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/et_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
